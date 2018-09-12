@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8" />
@@ -52,16 +51,13 @@
         xhttp.open('GET', 'index.json', true);
         xhttp.send();
       }
-
       const loadJsonCallback = (json) => {
         const banano = document.getElementById('banano');
         
         addChildText(banano, 'Deathmetall Bananos');
-
         const table = addChildElement(banano,'table');
         
         const tableHeaderRow = addChildElement(table,'tr');
-
         if(json.length == 0) {
           return;
         }
@@ -77,10 +73,75 @@
           }
         });
       }
-
       const onLoad = () => {
         loadJson();
       }
     </script>
 </body>
 </html>
+
+.small_image {
+  height: 100px;
+  width: 100px;
+}
+
+table, tr, td, th {
+  border: solid;
+  border-width: 0.5px;
+  font-family: monospace;
+}
+
+
+.text_align_center{
+  text-align: center;
+}
+
+.w100pct {
+  width: 100%;
+}
+
+.w99pct {
+  width: 99%;
+}
+
+.w96pct {
+  width: 96%;
+}
+
+.w600px {
+  width: 600px;
+}
+
+.selected_button {
+  box-shadow: 0px -2px #999;
+}
+
+.unselected_button {
+  box-shadow: 0 0px #999;
+}
+
+.button {
+  padding: 3px 3px;
+  margin: 3px 3px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  background-color: #EEE;
+  border: solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+  border-color: #AAA;
+}
+
+.button:hover {
+  background-color: #DDD;
+  box-shadow: 0px 2px #999;
+}
+
+.button:active {
+  background-color: #EEE;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
